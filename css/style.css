@@ -1,10 +1,50 @@
 body {
   background: pink;
+
+}
+main {
+  display: flex;
+  position: fixed;
 }
 
+img {
+  width: 800px;
+  flex: auto;
+}
 
 h1{
   font-family: 'Coiny', cursive;
   font-size: 32px;
   text-align: center;
+}
+
+/*GoodBarista Section*/
+.GoodBaristaContainer{
+
+}
+
+.GoodBaristaStats{
+
+}
+
+.GoodBaristaImage {
+
+}
+
+/*BadBaristaSection*/
+.BadBaristaContainer{
+
+}
+
+.BadBaristaStats {
+
+}
+
+.BadBaristaImage {
+
+}
+
+/*WinnerSection*/
+.WinnerContainer{
+
 }

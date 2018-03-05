@@ -27,6 +27,10 @@
 // }
 
 //get 1 barista to work first. then come back and add options to choose.
+
+$ (() => {
+
+
 class GoodBarista {
   constructor (taste, quality, presentation){
     this.taste = 6;
@@ -115,6 +119,6 @@ const choice3 = ()=> {
 
 
 
-$(() => {
 
-});
+
+}); // end document 
