@@ -31,13 +31,15 @@
 $ (() => {
 
 
+let winner;
+
 class GoodBarista {
   constructor (taste, quality, presentation){
-    this.taste = 6;
-    this.quality = 8;
-    this.presentation = 7;
+    this.taste = [6, 7, 8, 9];
+    this.quality = [6, 7, 8, 9];
+    this.presentation = [6, 7, 8, 9];
   }
-
+}
 
 //////********add this option if we have time***********///////
 // // player makes the right choice - improves stats//
@@ -54,8 +56,8 @@ class GoodBarista {
 //     this.presentation -=2;
 // }
 
-}
 const Rebel = new GoodBarista
+
 
 console.log(Rebel);
 
@@ -65,26 +67,47 @@ console.log(Rebel);
 class BadBarista {
   constructor (name, taste, quality, presentation){
     this.name = 'Grumpy';
-    this.taste = 5;
-    this.quality = 7;
-    this.presentation = 6;
+    this.taste = [6, 7, 8, 9];
+    this.quality = [6, 7, 8, 9];
+    this.presentation = [5, 6, 7, 8,];
   }
 }
+
+const Grumpy = new BadBarista
 
 /// Choose your barista character///
 // do after getting one to work//
 
 //BARISTA BATTLE//
-// if Good B taste + quality + presentation > Bad B taste + quality + pres = move to next round.
-const battle = ()=>{
-  alert ('Time to throw down!');
-  if (GoodBarista this.taste + this.quality + this.presentation >= BadBarista this.taste + this.quality + this.presentation) {
-    choice1 ();
-  }else if (GoodBarista this.taste + this.quality + this.presentation <= BadBarista this.taste + this.quality + this.presentation){
-    alert ('Sorry, you lost this round and you are out of the competition.')
-                // ADD OPTION TO RESTART // restart();
-  }
+
+const battle = ()=> {
+    if ((Rebel.presentation[Math.floor(Math.random()*Rebel.presentation.length)]) <= (Grumpy.presentation[Math.floor(Math.random()*Grumpy.presentation.length)])
+) {
+      console.log('grumpy wins');
+    } else {
+      console.log('rebel wins');
+    }
+  // console.log(Rebel.presentation);
 }
+battle();
+
+
+
+
+
+
+///////*******take one. trying again with random feature***********/////
+/// if Good B taste + quality + presentation > Bad B taste + quality + pres = move to next round.
+
+// const battle = ()=>{
+//   alert ('Time to throw down!');
+//   if (GoodBarista this.taste + this.quality + this.presentation >= BadBarista this.taste + this.quality + this.presentation) {
+//     choice1 ();
+//   }else if (GoodBarista this.taste + this.quality + this.presentation <= BadBarista this.taste + this.quality + this.presentation){
+//     alert ('Sorry, you lost this round and you are out of the competition.')
+//                 // ADD OPTION TO RESTART // restart();
+//   }
+// }
 
 
 
