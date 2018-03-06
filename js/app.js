@@ -39,18 +39,20 @@ class GoodBarista {
   }
 
 
-////****ENDED HERE. NEED TO GET CHOICERIGHT tO ACTUALLY CHANGE THE STATS
-choiceRight() {
-    this.taste +=2;
-    this.quality +=1;
-    this.presentation +=2;
-}
-
-choiceWrong() {
-    this.taste -= 1;
-    this.quality -= 2;
-    this.presentation -=2;
-}
+//////********add this option if we have time***********///////
+// // player makes the right choice - improves stats//
+// choiceRight() {
+//     this.taste +=2;
+//     this.quality +=1;
+//     this.presentation +=2;
+// }
+//
+// // player makes the wrong choice - stats go down//
+// choiceWrong() {
+//     this.taste -= 1;
+//     this.quality -= 2;
+//     this.presentation -=2;
+// }
 
 }
 const Rebel = new GoodBarista
@@ -72,7 +74,24 @@ class BadBarista {
 /// Choose your barista character///
 // do after getting one to work//
 
+//BARISTA BATTLE//
+// if Good B taste + quality + presentation > Bad B taste + quality + pres = move to next round.
+const battle = ()=>{
+  alert ('Time to throw down!');
+  if (GoodBarista this.taste + this.quality + this.presentation >= BadBarista this.taste + this.quality + this.presentation) {
+    choice1 ();
+  }else if (GoodBarista this.taste + this.quality + this.presentation <= BadBarista this.taste + this.quality + this.presentation){
+    alert ('Sorry, you lost this round and you are out of the competition.')
+                // ADD OPTION TO RESTART // restart();
+  }
+}
 
+
+
+
+const start = () => {
+  choice1();
+}
 
 
 /// Choice 1 ///
@@ -81,6 +100,7 @@ const choice1 = ()=> {
   if(choice === 'water'){
     alert('Good call. Stay hydrated and focused.')
     choiceRight();
+
   } else if (choice === 'beer'){
     alert('Nervous, eh? This will help take the edge off.')
     choiceWrong();
@@ -121,4 +141,4 @@ const choice3 = ()=> {
 
 
 
-}); // end document 
+}); // end document
