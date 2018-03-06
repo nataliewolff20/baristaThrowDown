@@ -1,5 +1,10 @@
+* {
+  border: solid gold 1px;
+}
+
 body {
   background: #66697C;
+  font-family: 'Acme', sans-serif;
 
 }
 .container {
@@ -10,7 +15,7 @@ body {
 }
 
 h1{
-  font-family: 'Coiny', cursive;
+  font-family: 'Acme', sans-serif;
   font-size: 50px;
   text-align: center;
 }
@@ -25,7 +30,10 @@ h1{
 }
 
 .GoodBaristaImage {
-
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 /*Machine Section*/
 .machine  {
@@ -47,6 +55,9 @@ h1{
 .BadBaristaImage {
   width: 25%;
   flex: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 /*WinnerSection*/
@@ -56,17 +67,22 @@ h1{
 
 /*Input prompts Section*/
 
-#input-container {
-	text-align: center;
-}
-
-#input-box {
-	height: 40px; width: 300px;
-}
-
-#submit {
-	height: 30px; width: 80px;
-	border: none;
+#battleButton {
+	display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 100px;
+  width: 100px;
+  text-align: center;
 	background-color: red;
 	color: white;
+  border-radius: 24px;
+}
+
+
+#submit {
+	height: 30px; width: 30px;
+	border: none;
+	background-color: pink;
+  border-radius: 50%;
 }
