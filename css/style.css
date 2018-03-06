@@ -1,20 +1,17 @@
 body {
-  background: pink;
+  background: #66697C;
 
 }
-main {
+.container {
   display: flex;
-  position: fixed;
-}
-
-img {
-  width: 800px;
-  flex: auto;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
 }
 
 h1{
   font-family: 'Coiny', cursive;
-  font-size: 32px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -30,6 +27,13 @@ h1{
 .GoodBaristaImage {
 
 }
+/*Machine Section*/
+.machine  {
+  height: 20px;
+  width: 20px;
+  display: flex;
+
+}
 
 /*BadBaristaSection*/
 .BadBaristaContainer{
@@ -41,10 +45,28 @@ h1{
 }
 
 .BadBaristaImage {
-
+  width: 25%;
+  flex: auto;
 }
 
 /*WinnerSection*/
 .WinnerContainer{
 
+}
+
+/*Input prompts Section*/
+
+#input-container {
+	text-align: center;
+}
+
+#input-box {
+	height: 40px; width: 300px;
+}
+
+#submit {
+	height: 30px; width: 80px;
+	border: none;
+	background-color: red;
+	color: white;
 }
