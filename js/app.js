@@ -63,16 +63,19 @@ $('.battleButton').on('click', (event) => {
 
 })
 // pick up battle button from here|
+//
+// $('.battleButton').on('click', addWinner);
+//
+//  //log the winner of the battle in the winner div
+// const addWinner = () => {
+//   const $winnerContainer = $('#winner-container');
+//   const winner = $winnerContainer.val();
+//   console.log(winner);
+//   $('#winner-container').append(winner);
+// }
 
-$('.battleButton').on('click', addWinner);
 
- //log the winner of the battle in the winner div
-const addWinner = () => {
-  const $winnerContainer = $('#winner-container');
-  const winner = $winnerContainer.val();
-  console.log(winner);
-  $('#winner-container').append(winner);
-}
+
 
 //   to here |
 
@@ -101,7 +104,6 @@ const $modal = $('#modal');
 //grab the close BUTTON
 const $closeBtn = $('#close');
 
-
 //EventHandlers
 //open modal
 const openModal = ()=>{
@@ -113,6 +115,7 @@ const openModal = ()=>{
 const closeModal = () =>{
   $modal.css('display','none');
   // $modal.hide();
+  console.log('close modal function is running');
 }
 
 
@@ -122,9 +125,6 @@ $openBtn.on('click', openModal);
 
 //event listener - close MODAL
 $closeBtn.on('click', closeModal);
-
-
-
 
 
 }); // end document
