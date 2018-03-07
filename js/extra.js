@@ -93,3 +93,13 @@ const choice3 = ()=> {
 
 
 ************************************************************************
+
+
+
+//
+//  ///// alert player to their scores after random function is performed////
+// announceStats() {
+//  console.log('taste scored at: ' + this.taste );
+//  console.log('quality scored at: ' + this.quality);
+//  console.log('presentation scored at: ' + this.presentation);
+// }

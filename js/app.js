@@ -39,22 +39,17 @@ $battle = ()=> {
        ($Grumpy.taste[Math.floor(Math.random()*$Grumpy.taste.length)]) +
        ($Grumpy.quality[Math.floor(Math.random()*$Grumpy.quality.length)]) ) {
       console.log('grumpy wins');
+      alert ("Grumpy wins");
+
 
     } else {
       console.log('rebel wins');
+      alert ("Rebel wins");
     }
 }
 // $battle();
            // ADD OPTION TO RESTART // restart();
 
-
-  //
-  //  ///// alert player to their scores after random function is performed////
-  // announceStats() {
-  //  console.log('taste scored at: ' + this.taste );
-  //  console.log('quality scored at: ' + this.quality);
-  //  console.log('presentation scored at: ' + this.presentation);
-  // }
 
 
 // clickable battle BUTTON
@@ -64,9 +59,12 @@ $('.battleButton').on('click', (event) => {
   $battle();
 
 
-})
 
-$('.battleButton')on('click', addWinner);
+
+})
+// pick up battle button from here|
+
+$('.battleButton').on('click', addWinner);
 
  //log the winner of the battle in the winner div
 const addWinner = () => {
@@ -75,6 +73,8 @@ const addWinner = () => {
   console.log(winner);
   $('#winner-container').append(winner);
 }
+
+//   to here |
 
 
 //
@@ -105,14 +105,14 @@ const $closeBtn = $('#close');
 //EventHandlers
 //open modal
 const openModal = ()=>{
-  // $modal.css('display','block');
-  $modal.show();
+  $modal.css('display','block');
+  // $modal.show();
 }
 
 //close modal
 const closeModal = () =>{
-  // $modal.css('display','none');
-  $modal.hide();
+  $modal.css('display','none');
+  // $modal.hide();
 }
 
 
