@@ -3,8 +3,6 @@
 $ (() => {
 
 
-let winner;
-
 class GoodBarista {
   constructor (taste, quality, presentation){
     this.taste = [6, 7, 8, 9];
@@ -60,7 +58,7 @@ battle();
   // }
 
 
-
+$
 
 
 
