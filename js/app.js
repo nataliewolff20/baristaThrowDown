@@ -2,9 +2,6 @@
 
 $ (() => {
 
-
-
-
 class $GoodBarista {
   constructor (taste, quality, presentation){
     this.taste = [6, 7, 8, 9];
@@ -12,7 +9,6 @@ class $GoodBarista {
     this.presentation = [6, 7, 8, 9];
   }
 }
-
 
 /// Barista Bad Guys ///
 /// will change by assigning newBadBarista after each battle
@@ -68,16 +64,16 @@ $('.battleButton').on('click', (event) => {
   $battle();
 
 
-
-
 })
+
+$('.battleButton')on('click', addWinner);
 
  //log the winner of the battle in the winner div
 const addWinner = () => {
   const $winnerContainer = $('#winner-container');
   const winner = $winnerContainer.val();
   console.log(winner);
-  $('#winner-container').append(body);
+  $('#winner-container').append(winner);
 }
 
 
@@ -97,24 +93,26 @@ const addWinner = () => {
 // $('Machine').append($div);
 
 
-
+//////////MODAL//////////
 //grab How To Play BUTTON
 const $openBtn = $('#openModal')
 //grab the modal
 const $modal = $('#modal');
 //grab the close BUTTON
-const $close = $('#close');
+const $closeBtn = $('#close');
 
 
 //EventHandlers
 //open modal
 const openModal = ()=>{
-  $modal.css('display', 'block');
+  // $modal.css('display','block');
+  $modal.show();
 }
 
 //close modal
 const closeModal = () =>{
-  $modal.css('display','none');
+  // $modal.css('display','none');
+  $modal.hide();
 }
 
 
@@ -128,10 +126,5 @@ $closeBtn.on('click', closeModal);
 
 
 
-
-
-
-
-openModal();
 
 }); // end document
