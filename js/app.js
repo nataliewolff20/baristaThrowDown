@@ -30,7 +30,7 @@ const $Grumpy = new $BadBarista
 
 //BARISTA BATTLE//
 
-$battle = ()=> {
+battle = ()=> {
     //alert ('time to battle');
     if (($Rebel.presentation[Math.floor(Math.random()*$Rebel.presentation.length)]) +
         ($Rebel.taste[Math.floor(Math.random()*$Rebel.taste.length)]) +
@@ -39,12 +39,19 @@ $battle = ()=> {
        ($Grumpy.taste[Math.floor(Math.random()*$Grumpy.taste.length)]) +
        ($Grumpy.quality[Math.floor(Math.random()*$Grumpy.quality.length)]) ) {
       console.log('grumpy wins');
-      alert ("Grumpy wins");
-
+      // alert ("Grumpy wins");
+      const $div = $('<div>');
+      $('body').append($div);
+      $div.addClass('#winner-container');
+      $div.text('Rebel wins!');
 
     } else {
       console.log('rebel wins');
-      alert ("Rebel wins");
+      const $div = $('<div>');
+      $('body').append($div);
+      $div.addClass('#winner-container');
+      $div.text('Rebel wins!');
+      // alert ("Rebel wins");
     }
 }
 // $battle();
@@ -56,23 +63,23 @@ $battle = ()=> {
 
 
 $('.battleButton').on('click', (event) => {
-  $battle();
-
-
-
+  battle();
 
 })
 // pick up battle button from here|
-//
-// $('.battleButton').on('click', addWinner);
-//
-//  //log the winner of the battle in the winner div
-// const addWinner = () => {
-//   const $winnerContainer = $('#winner-container');
-//   const winner = $winnerContainer.val();
-//   console.log(winner);
-//   $('#winner-container').append(winner);
-// }
+
+
+
+ //log the winner of the battle in the winner div
+const addWinner = () => {
+  const $winnerContainer = $('#winner-container');
+  const winner = $winnerContainer.val();
+  console.log(winner);
+  $('#winner-container').append(winner);
+}
+
+$('.battleButton').on('click', addWinner);
+///create an element with console.log text from battle button. append to winnerContainer.
 
 
 
