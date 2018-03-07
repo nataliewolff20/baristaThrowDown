@@ -1,6 +1,6 @@
-* {
+/* * {
   border: solid gold 1px;
-}
+} */
 
 body {
   background: #66697C;
@@ -19,6 +19,38 @@ h1{
   font-size: 50px;
   text-align: center;
 }
+
+/*MODAL Section*/
+
+#modal {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+
+
+}
+
+#modal-box {
+  background: white;
+  height: 300px;
+  width: 500px;
+  margin: 100px auto;
+  padding: 2%;
+
+}
+
+/* #modal-start {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid gold;
+} */
 
 /*GoodBarista Section*/
 .GoodBaristaContainer{

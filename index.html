@@ -17,6 +17,25 @@
     <header>
       <h1>Barista Battle</h1>
     </header>
+    <main>
+      <!---MODAL SECTION---->
+
+      <button id="openModal">How To Play</button>
+      <!---MODAL--->
+      <div id="modal">
+        <div id="modal-box">
+
+              <!--<button id="begin" type="button" name="button">BEGIN</button> -->
+          <a id="closeModal" href="https://nataliewolff20.github.io/">CLOSE</a>
+          <h1>Welcome to the Barista Throw Down! </h1>
+          <p>You will be competing in a barista competition against your local rival baristas. You will be graded on the taste, quality and presentation of your drinks. </p>
+
+        </div>
+
+      </div>
+
+
+
     <div class="container">
 
       <!---GOODBARISTA SECTION----->
@@ -24,9 +43,6 @@
         <div class="GoodBaristaImage"><img src="images/Rebel.png" alt="Rebel"> </div>
         <div class="GoodBaristaStats">
           <h2> Rebel </h2>
-          <h3> Taste: </h3>
-          <h3> Quality: </h3>
-          <h3> Presentation: </h3>
         </div>
 
       </div>
@@ -35,9 +51,19 @@
      <div class="Machine">
       <img src="images/machine.JPG" alt="machine" width="300" height="300">
 
-      <!---BATTLE BUTTON---->
-        <div id="battleButton">
-          <button id="submit">BATTLE</button>
+
+
+    <!---BATTLE BUTTON---->
+        <div class="battleButton"
+          <button id="battleButton">BATTLE</button>
+        </div>
+
+    <!---WINNER SECTION--->
+        <div id="winnerContainer">
+          <h3>Winner:</h3>
+          <p id="goodBaristaWin"></p>
+          <p id="badBaristaWin"></p>
+
         </div>
 
     </div>
@@ -46,19 +72,17 @@
         <div class="BadBaristaImage"><img src="images/BadBarista1.png" alt="BB1">
         </div>
         <div class="BadBaristaStats">
-          <h2> Chuck </h2>
-          <h3> Taste: </h3>
-          <h3> Quality: </h3>
-          <h3> Presentation: </h3>
+          <h2> Grumpy </h2>
+          <div id="BadBaristaWin">
+
+          </div>
         </div>
 
       </div>
 
 
-      <!---WINNER SECTION--->
-      <div class="WinnerContainer">
-        <input id= type="display" >
-      </div>
+
     </div>
+    </main>
   </body>
 </html>
