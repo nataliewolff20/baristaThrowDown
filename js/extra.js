@@ -103,3 +103,11 @@ const choice3 = ()=> {
 //  console.log('quality scored at: ' + this.quality);
 //  console.log('presentation scored at: ' + this.presentation);
 // }
+
+
+
+************************************************************************
+
+const $tally1 = $('<tally1>');
+$('body').append($tally1);
+$div.addClass('#GoodBaristaStats');

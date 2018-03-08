@@ -93,9 +93,12 @@ h1{
 }
 
 /*WinnerSection*/
-.WinnerContainer{
+#winner-container{
   display: flex;
+  flex: auto;
   color: white;
+  text-align: center;
+  font-size: 46px;
 
 }
 
