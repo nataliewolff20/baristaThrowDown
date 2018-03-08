@@ -53,7 +53,7 @@ battle = ()=> {
       const $div = $('<div>');
       $('body').append($div);
       $div.addClass('#winner-container');
-      $div.css ('font-size','30px'). text('Your score is : Taste- ' + rebelpresentation + ' Quality- ' + rebelquality + ' Presentation- ' +rebelpresentation + '.   Grumpy\'s score is : Taste- ' + grumpytaste + ' Quality- ' + grumpyquality + 'Presentation- ' + grumpypresentation+
+      $div.css ('font-size','24px'). text('Your score is : Taste- ' + rebelpresentation + ' Quality- ' + rebelquality + ' Presentation- ' +rebelpresentation + '.   Grumpy\'s score is : Taste- ' + grumpytaste + ' Quality- ' + grumpyquality + 'Presentation- ' + grumpypresentation+
       ' Grumpy wins. Sorry, you are out of the competition. Try again? Just press the BATTLE button!  ');
 
     } else {
@@ -61,7 +61,7 @@ battle = ()=> {
       const $div = $('<div>');
       $('body').append($div);
       $div.addClass('#winner-container');
-      $div.css ('font-size', '30px').css ('color', 'pink').text('Your score is : Taste- ' + rebelpresentation + ' Quality- ' + rebelquality + ' Presentation- ' +rebelpresentation+  '.    Grumpy\'s score is : Taste- ' + grumpytaste + ' Quality- ' + grumpyquality +          ' Presentation- ' + grumpypresentation+' Rebel wins! Rematch? Just press the BATTLE button!');
+      $div.css ('font-size', '24px').css ('color', 'pink').text('Your score is : Taste- ' + rebelpresentation + ' Quality- ' + rebelquality + ' Presentation- ' +rebelpresentation+  '.    Grumpy\'s score is : Taste- ' + grumpytaste + ' Quality- ' + grumpyquality +          ' Presentation- ' + grumpypresentation+' Rebel wins! Rematch? Just press the BATTLE button!');
 
     }
 }
@@ -71,6 +71,7 @@ battle = ()=> {
 
 
 $('.battleButton').on('click', (event) => {
+
   battle();
 })
 
