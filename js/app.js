@@ -68,6 +68,7 @@ battle = ()=> {
 
 
 
+
     } else {
       console.log('rebel wins');
       const $div = $('<div>');
