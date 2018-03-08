@@ -106,8 +106,72 @@ const choice3 = ()=> {
 
 
 
-************************************************************************
 
 const $tally1 = $('<tally1>');
 $('body').append($tally1);
 $div.addClass('#GoodBaristaStats');
+
+************************************************************************
+
+// class $Intelligencia {
+//   constructor (name, taste, quality, presentation){
+//     this.name = 'Intelly';
+//     this.taste = [4, 5, 6, 7];
+//     this.quality = [4, 5, 6, 7];
+//     this.presentation = [4, 5, 6, 7];
+//   }
+// }
+
+
+************************************************************************
+
+// battle2 = ()=> {
+//   const $div2 = $('<div>');
+//   $('body').append($div);
+//   $div.addClass('#winner-container');
+//   $div.text('Grumpy wins. Sorry, you are out of the competition');
+//
+// }
+// $battle();
+           // ADD OPTION TO RESTART // restart();
+
+
+
+
+
+
+           // pick up battle button from here|
+
+
+
+            //log the winner of the battle in the winner div
+           // const addWinner = () => {
+           //   const $winnerContainer = $('#winner-container');
+           //   const winner = $winnerContainer.val();
+           //   console.log(winner);
+           //   $('#winner-container').append(winner);
+           // }
+           //
+           // $('.battleButton').on('click', addWinner);
+           ///create an element with console.log text from battle button. append to winnerContainer.
+
+
+
+
+           //   to here |
+
+
+           //
+           // ***trying from here
+           // $('#battleButton').on('click', ()=> {
+           //
+           //
+           //
+           // const $battleButton = $('#battle-button');
+           //
+           // })
+           //***notes taken watching Karolin's lecture****
+           // const $div = $('<div>');
+           // $div.addClass('battleButton');
+           //
+           // $('Machine').append($div);
